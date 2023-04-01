@@ -6,12 +6,10 @@ public class Barang {
     private double hargaBrg;
     private int jumBar;
     private double totHargaBrg;
-    private tipe tipeBarang;
-
-    enum tipe {Makanan, Minuman, nonKonsumsi}
+    private Konsumsi tipeBarang;
     
     // constructor
-        public Barang(String namaBrg, double hargaBrg, int jumBar, tipe tipeBarang) {
+        public Barang(String namaBrg, double hargaBrg, int jumBar, Konsumsi tipeBarang) {
         this.namaBrg = namaBrg;
         this.hargaBrg = hargaBrg;
         this.jumBar = jumBar;
@@ -35,7 +33,7 @@ public class Barang {
         return totHargaBrg = hargaBrg * jumBar;
     }
 
-    public tipe getTipeBarang() {
+    public Konsumsi getTipeBarang() {
         return tipeBarang;
     }
 
